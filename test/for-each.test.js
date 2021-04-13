@@ -1,3 +1,4 @@
+
 // IMPORT MODULES under test here:
 import { 
     makeArrayOfNames,
@@ -26,13 +27,14 @@ test('should make an array of names', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeArrayOfNames(pets);
+    
 
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a reverse array of type', (expect) => {
+test('should make a reverse array of type', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = ['frog', 'cat'];
@@ -46,7 +48,7 @@ skip('should make a reverse array of type', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a spanish array of pet objects', (expect) => {
+test('should make a spanish array of pet objects', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [
@@ -68,4 +70,3 @@ skip('should make a spanish array of pet objects', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
 });
-
