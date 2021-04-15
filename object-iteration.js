@@ -19,7 +19,26 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    // const someObjectUpper = Object.keys(someObject)
+    // Initialize new Object
+    const newObject = {}
+    // console.log(Object.keys(someObject));
+    //loop thorough someObject using Object.entries
+    for (let key in someObject) {
+        let booger = someObject[key]
+        console.log(booger)
+        let upperCase = key.toUpperCase()
+        console.log(upperCase)
+        newObject[upperCase] = booger
+    }
+    //set the key to the value
+    //making key to upper care.
+    //Object.key.toUpperCase
+
+
+
+
+    return newObject;
 }
 
 /*
