@@ -11,7 +11,7 @@ export function makeArrayOfNames(arr) {
     arr.forEach((booger) => {
         newArray.push(booger.name)
     })
-    console.log(newArray)
+
     return newArray;
 }
 /*
